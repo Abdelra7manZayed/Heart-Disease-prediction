@@ -1,0 +1,4 @@
+1. Install ngrok: https://ngrok.com/download
+2. Run Streamlit app: streamlit run ui/app.py
+3. In new terminal: ngrok http 8501
+4. Share the ngrok URL (e.g., https://abc123.ngrok.io)
