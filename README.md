@@ -24,7 +24,6 @@ A full machine learning pipeline using the Heart Disease UCI Dataset to predict 
 5. **Clustering:** K-Means (elbow method), Hierarchical (dendrogram)
 6. **Tuning:** GridSearchCV, RandomizedSearchCV
 7. **Deployment:** Save model as .pkl, create Streamlit UI, Ngrok link
-8. **Documentation:** Structure and upload project to GitHub
 
 ## 📁 File Structure
 - `data/`, `notebooks/`, `models/`, `ui/`, `deployment/`, `results/`
