@@ -1,0 +1,55 @@
+# Heart Disease Prediction - Optimized Random Forest Evaluation
+# Last Updated: [DATE]
+
+## Model Performance Summary
+- Best Model: Random Forest Classifier
+- Validation: 5-Fold Cross-Validation
+- Test Set Size: 61 samples
+- Best Parameters:
+  - n_estimators: 200
+  - max_depth: None (unlimited)
+  - min_samples_split: 10 
+  - min_samples_leaf: 2
+  - class_weight: balanced
+
+## Classification Metrics
+### Overall Performance
+- Accuracy: 0.885 ± 0.03
+- ROC AUC: 0.950 ± 0.02
+- F1 Score: 0.885 ± 0.04
+
+### Class-Specific Metrics (1=Heart Disease)
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| 0     | 0.87      | 0.90   | 0.88     | 29      |
+| 1     | 0.90      | 0.88   | 0.89     | 32      |
+
+## Feature Importance (Top 10)
+1. thalach (Max Heart Rate) - 0.14
+2. ca (Major Vessels) - 0.12  
+3. cp_4 (Asymptomatic Chest Pain) - 0.11
+4. oldpeak (ST Depression) - 0.10
+5. thal_7.0 (Fixed Defect) - 0.09
+6. age - 0.08
+7. chol (Cholesterol) - 0.07
+8. trestbps (Resting BP) - 0.06
+9. exang (Exercise Angina) - 0.05
+10. slope_2 (Flat ST Slope) - 0.04
+
+## Confusion Matrix
+|          | Predicted 0 | Predicted 1 |
+|----------|-------------|-------------|
+| Actual 0 | 26 (TN)     | 3 (FP)      |
+| Actual 1 | 4 (FN)      | 28 (TP)     |
+
+## Key Insights
+1. **Optimal Depth**: Unlimited max_depth suggests complex relationships in data
+2. **Leaf Size**: min_samples_leaf=2 prevents overfitting to rare cases
+3. **Split Requirement**: min_samples_split=10 ensures robust decision nodes
+4. **Top Predictors**: Exercise-induced metrics (thalach, oldpeak) are most significant
+5. **Clinical Value**: ca (vessel count) aligns with medical diagnostics
+
+## Model Limitations
+- Sample Size: Only 61 test cases
+- Class Imbalance: 45% vs 55% distribution
+- Missing Data: 2.3% values imputed
