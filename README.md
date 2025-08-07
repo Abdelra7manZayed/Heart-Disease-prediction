@@ -37,4 +37,3 @@ A full machine learning pipeline using the Heart Disease UCI Dataset to predict 
 - Cleaned dataset, selected features, trained models
 - Evaluation metrics, optimized model, .pkl file
 - Streamlit app with Ngrok access [Bonus]
-- Complete GitHub repository
