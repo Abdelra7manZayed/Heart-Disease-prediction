@@ -1,0 +1,45 @@
+### Core Python ###
+__pycache__/
+*.py[cod]
+*.so
+.Python
+
+### Environments ###
+.env
+.venv/
+venv/
+env/
+pip-log.txt
+
+### Jupyter ###
+.ipynb_checkpoints/
+*.ipynb
+
+### Data Files ###
+*.csv
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.feather
+*.parquet
+data/processed/  # exclude processed data
+!data/README.md  # keep this file
+
+### Model Artifacts ###
+models/*.pkl
+models/*.joblib
+!models/README.md  # keep this file
+
+### IDE ###
+.vscode/
+.idea/
+*.swp
+*.swo
+
+### Streamlit ###
+.streamlit/
+
+### System ###
+.DS_Store
+Thumbs.db
