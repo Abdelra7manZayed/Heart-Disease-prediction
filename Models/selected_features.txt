@@ -1,0 +1,10 @@
+age
+trestbps
+chol
+thalach
+exang
+oldpeak
+ca
+cp_4
+slope_2
+thal_7.0
